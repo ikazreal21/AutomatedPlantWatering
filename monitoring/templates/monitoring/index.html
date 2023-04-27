@@ -1,0 +1,246 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Admin Dashboard</title>
+
+  <link rel="canonical" href="#" />
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/cs_bs/cs_bs/css/bootstrap.css' %}" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="{% static 'css/styles.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/dark-mode.css' %}">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas"><span class="navbar-toggler-icon"></span></button>
+    <a class="navbar-brand fw-bold me-auto" href="#">Plant Monitoring System</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="d-flex ms-auto">
+          <div class="input-group my-3 my-lg-0">
+              <input type="text" class="form-control" placeholder="Search Logs" aria-label="Search Logs" aria-describedby="button-addon2">
+              <button class="btn btn-primary" type="button" id="button-addon2"><i class="bi bi-search">Search</i></button>
+            </div>
+      </form>
+      <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">User Profile</a></li>
+              <!-- <li><a class="dropdown-item" href="#">Logout</a></li> -->
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>             
+<!-- Navbar End -->
+
+<!-- Sidebar Start -->
+<div class="offcanvas offcanvas-start bg-dark text-white side-bar" data-bs-scroll="true" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
+  <div class="offcanvas-body p-0">
+    <nav class="navbar-dark">
+      <ul class="navbar-nav">
+        <li>
+          <div class="text-muted small fw-bold text-uppercase px-3">Core</div>
+        </li>
+        <li>
+          <a href="#" class="nav-link px-3 active">
+            <span class="me-2">
+              <i class="bi bi-wrench-adjustable-circle"></i>
+            </span>
+            <span class="fw-bold">Dashboard</span>
+          </a>
+        </li>
+        <li class="my-4">
+          <hr class="dropdown-divider">
+        </li>
+        <li>
+          <div class="text-muted small fw-bold text-uppercase px-3">Interface</div>
+        </li>
+        <li>
+          <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <span class="me-2"><i class="bi bi-layout-text-window-reverse"></i></span>
+            <span class="fw-bold">Layouts</span>
+            <span class="right-icon ms-auto">
+              <i class="bi bi-chevron-down"></i>
+            </span>
+          </a>
+          <div class="collapse" id="collapseExample">
+            <div>
+              <ul class="navbar-nav ps-3">
+                <li>
+                  <a href="#" class="nav-link px-3">
+                    <span class="me-2"><i class="bi bi-layout-text-window-reverse"></i></span>
+            <span class="fw-bold">Nested Link</span>
+                  </a>                  
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <li>
+          <a href="#" class="nav-link px-3">
+            <span class="me-2">
+              <i class="bi bi-archive"></i>
+            </span>
+            <span class="fw-bold">Archive</span>
+          </a>
+        </li>
+        <li class="my-4">
+          <hr class="dropdown-divider">
+        </li>
+        <li>
+          <div class="text-muted small fw-bold text-uppercase px-3">Addons</div>
+        </li>
+        <li>
+          <a href="#" class="nav-link px-3">
+            <span class="me-2">
+              <i class="bi bi-activity"></i>
+            </span>
+            <span class="fw-bold">Activity</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link px-3">
+            <span class="me-2">
+              <i class="bi bi-clipboard2-data"></i>
+            </span>
+            <span class="fw-bold">Data</span>
+          </a>
+        </li>
+        <li class="my-4">
+          <hr class="dropdown-divider">
+        </li>
+        <div class="custom-control custom-switch px-3">
+          <label class="custom-control-label" for="darkSwitch">
+          <span class="fw-bold">
+            <i class="bi bi-moon me-2"></i>
+            Dark Mode</span>
+          </label>
+          <input type="checkbox" class="custom-control-input checkbox ms-auto" id="darkSwitch">
+        </div>
+        <li class="my-4">
+          <hr class="dropdown-divider">
+        </li>
+        <li>
+          <a href="#" class="nav-link px-3">
+            <span class="me-2">
+              <i class="bi bi-info-circle"></i>
+            </span>
+            Provided by 
+            <span class="fw-bold">AppSeed</span>
+          </a>
+        </li>
+      </li>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!-- Sidebar End -->
+
+<!-- Main Content Start -->
+<main class="mt-5 pt-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 fw-bold fs-3">Admin Dashboard</div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-3 mb-3">
+        <div class="card text-white bg-primary h-100">
+          <div class="card-header fw-bold">Water Level</div>
+          <div class="card-body">
+            <h1 class="card-title">88%</h1>
+            <p class="card-text">This is the Water Level</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="card text-white bg-success h-100">
+          <div class="card-header fw-bold">Plants Watered</div>
+          <div class="card-body">
+            <h1 class="card-title">7</h1>
+            <p class="card-text">This is how many plants Watered</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="card text-white bg-danger h-100">
+          <div class="card-header fw-bold">Not Working Springkler</div>
+          <div class="card-body">
+            <h1 class="card-title">2</h1>
+            <p class="card-text">This is how many Not Working Springkler Are</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="card text-white bg-success h-100">
+          <div class="card-header fw-bold">Users</div>
+          <div class="card-body">
+            <h1 class="card-title">1</h1>
+            <p class="card-text">This is how many Users</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row mt-2">
+      <div class="col-md-12">
+        <div class="card-table">
+          <div class="card-header">
+            Logs
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table id="example" class="table data-table" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Age</th>
+                        <th>Login Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Donna Snider</td>
+                        <td>Technician</td>
+                        <td>20</td>
+                        <td>2023/01/25</td>
+                    </tr>
+                    <tr>
+                        <td>Juan</td>
+                        <td>Planter</td>
+                        <td>37</td>
+                        <td>2023/01/25</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+</main>
+<script src="{% static 'css/cs_bs/cs_bs/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/dark-mode-switch.min.js' %}"></script>
+
+</body>
+</html>

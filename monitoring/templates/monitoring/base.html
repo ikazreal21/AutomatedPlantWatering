@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Admin Dashboard</title>
+
+  <link rel="canonical" href="#" />
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/cs_bs/cs_bs/css/bootstrap.css' %}" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="{% static 'css/styles.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/dark-mode.css' %}">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold me-auto" href="#">Plant Monitoring System</a>
+  </div>
+</nav>  
+<main class="mt-5 pt-3">
+    {% block content %}
+    {% endblock %}
+</main>
+
+<script src="{% static 'css/cs_bs/cs_bs/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/dark-mode-switch.min.js' %}"></script>
+
+</body>
+</html>
