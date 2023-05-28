@@ -1,0 +1,35 @@
+Arduino UNO or Genuino UNO
+- https://shopee.ph/%E3%80%90Free-Case%E3%80%91LAFVIN-UNO-R3-Board-ATMEGA328-CH340G-With-USB-Cable-For-Arduino-i.365944604.2921235253?xptdk=7dea17d5-9779-49c6-8c3e-4d09b37c2a46
+- Original UNO
+
+Capacitive Soil Moisture Sensor
+-https://shopee.ph/Capacitive-soil-moisture-sensor-module-Corrosion-Resistant-wide-voltage-wire-Analog-Capacitive-Soil-Moisture-Sensor-V1.2-i.226548939.6019942437?xptdk=545454a2-7067-4372-a6a3-03dc3c270c20
+
+Relay
+-https://shopee.ph/1-Channel-5V-Relay-Module-Board-Shield-with-Optocoupler-Support-High-and-Low-Level-Trigger-i.52451576.847067242?xptdk=606b9d12-859f-4250-ad87-c74adaee7f17
+
+12V Pump
+-https://shopee.ph/DC-12V-Micro-Electric-Brushless-Water-Submersible-Pump-i.302542649.11162126435?xptdk=188099a2-a95b-4043-b9d3-767cf072c00a
+
+Vinyl Tube
+-https://shopee.ph/DOREEN-Flexible-Tube-Transparent-Plumbing-Hoses-Hose-1-Meter-Silicone-Rubber-Food-Grade-Beer-Milk-Pipe-i.54564872.10714828236?sp_atk=96b40177-53f3-4528-b18c-513df60a7a82&xptdk=96b40177-53f3-4528-b18c-513df60a7a82
+-5x10mm
+
+12V Power Adapter
+-https://shopee.ph/5V-12V-1A-2A-3A-5A-AC-DC-Adaptor-Charger-Power-Supply-for-CCTV-Security-adapter-i.180027163.8521061874?xptdk=0956119a-a4f8-48c1-9f84-382b504c14c9
+-12v 2A
+
+DC Power Jack
+-https://shopee.ph/DC-Power-Plug-Jack-Adapter-Connector-2.1-X-5.5-5.5*2.1Mm-Male-Female-Cctv-Camera-i.20469516.2498427592?xptdk=741f5626-946a-4d4c-902c-7c2d399a068b
+-Female
+
+Jumper Wires
+-https://shopee.ph/40pcs-10cm-20cm-30cm-Breadboard-connecting-Jumper-Wires-Dupont-Wire-Cable-Arduino-Prototyping-i.18252381.190149221?xptdk=e5afbc07-ba9a-439f-a075-c0cd691f4e6f
+-Male Female 20CM
+
+9V Power Adapter for Arduino
+-https://shopee.ph/6V-9V-12V-1A-2A-AC-DC-Power-Supply-Adapter-Adaptor-5.5mm-Flat-CCTV-Modem-Router-Charger-BP-monitor-i.8988286.7073091158?xptdk=5a1fa8a6-8a35-4c5e-b595-0b81dc4de79f
+-9V 1A
+
+Screw Terminal Block Shield for Arduino
+-https://shopee.ph/Proto-Screw-Shield-1.0-Assembled-prototype-terminal-expansion-board-For-Arduino-UNO-MEGA2560-One-i.56540719.21445686513?xptdk=25876450-397d-45b2-8743-051ae679dbba

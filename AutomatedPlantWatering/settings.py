@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-5we)f^05+2ne35&jeo4+h7h44y%)t2gor!j%&slv70qo@$q-^4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['solar-powered-smart-irrigation.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -81,6 +82,9 @@ DATABASES = {
     }
 }
 
+import dj_database_url
+
+DATABASES['default'] = dj_database_url.parse('postgres://pncyomhunavirb:febd8c7f2770de956843c6f3a8e6405b68772f02c0a7880518de87d6e82837a3@ec2-3-234-204-26.compute-1.amazonaws.com:5432/d21j1dkd2dftmg', conn_max_age=600)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -118,13 +122,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
-
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-
-MEDIA_URL = "/image/"
-
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+
+STATIC_URL = '/static/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_URL = "/media/"
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
